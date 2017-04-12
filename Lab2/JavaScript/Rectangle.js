@@ -40,11 +40,11 @@ Rectangle.prototype.setHeight=function (value){
 }
 
 Rectangle.prototype.calculateArea=function (){
-    //TODO
+    return (this.width *this.height);
 }
 
 Rectangle.prototype.calculatePerimeter=function (){
-    //TODO
+    return (this.width + this.height + this.width + this.height);
 }
 
 Rectangle.prototype.draw = function (canvas){

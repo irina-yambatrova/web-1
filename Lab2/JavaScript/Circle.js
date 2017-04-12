@@ -29,11 +29,11 @@ Circle.prototype.setY=function(value){
 }
 
 Circle.prototype.calculateArea=function (){
-    //TODO
+    return (Math.PI*Math.pow(this.radius,2));
 }
 
 Circle.prototype.calculatePerimeter=function (){
-    //TODO
+    return (2*Math.PI*this.radius);
 }
 
 Circle.prototype.draw = function(canvas){

@@ -53,13 +53,17 @@ Triangle.prototype.setY3=function(value){
 }
 
 Triangle.prototype.calculateArea=function (){
-    //TODO
+    square = Math.abs((this.x1 - this.x3)*(this.y2 - this.y3) - (this.x2 - this.x3)*(this.y1 - this.y3)) * 0.5;
+    return square;
 }
 
 Triangle.prototype.calculatePerimeter=function (){
-    //TODO
+    lengthFirst = Math.sqrt(Math.pow(Math.abs(this.x1 - this.x2),2) + Math.pow(Math.abs(this.y1 - this.y2),2));
+    lengthSecond = Math.sqrt(Math.pow(Math.abs(this.x1 - this.x3),2) + Math.pow(Math.abs(this.y1 - this.y3),2));
+    lengthThird = Math.sqrt(Math.pow(Math.abs(this.x2 - this.x3),2) + Math.pow(Math.abs(this.y2 - this.y3),2));
+    return (lengthFirst + lengthSecond + lengthThird);
 }
 
-Triangle.prototype.dra =function(canvas){
+Triangle.prototype.draw =function(canvas){
     //TODO
 }
